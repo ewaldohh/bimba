@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BimbaApplication<bimba>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.bimba.bimba.BimbaApplication",
+            "projectName": "bimba",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
