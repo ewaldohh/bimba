@@ -1,2 +1,2 @@
-flow Spring Boot => Repo -> Service -> Controller
-Penggunaan anotasi @PostMapping pada fungsi create karena Client melakukan Post -> Server
+1. flow Spring Boot => Repo -> Service -> Controller
+2. Penggunaan anotasi @PostMapping pada fungsi create karena Client melakukan Post -> Server
