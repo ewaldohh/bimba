@@ -7,21 +7,23 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotEmpty;
 
 @Entity //menyatakan bahwa kelas ini merupakan Entity
 @Table(name = "tbl_product") //cek apakah tbl tersebut ada di db, klo tdk akan dicreate
 public class Product implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
     
     @Id //menyatakan Primary Key
     @GeneratedValue(strategy = GenerationType.IDENTITY) //auto increment
     private long id;
 
+    @NotEmpty(message="Name is required") //Not null wajib diisi
     //@Column(name = "product_name", length=100) untuk customize
     private String name;
 
+    //Karena tidak mandatory field bisa di Post tetapi isinya akan menjadi null
     private String description;
 
     private double price;
