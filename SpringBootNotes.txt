@@ -1,2 +1,4 @@
 1. flow Spring Boot => Repo -> Service -> Controller
 2. Penggunaan anotasi @PostMapping pada fungsi create karena Client melakukan Post -> Server
+3. a. Deklarasi tabel sebenarnya sudah ada di file entities, namun terkadang tidak semua field harus kita isi di awal oleh sebab itu kita tambahkan kelas DTO sebagai validasi di awal field apa yang harus diisi di awal.
+3. b. dengan menggunakan deppendency modelmapper tambah deppendency, tambah di class application
